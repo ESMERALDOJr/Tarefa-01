@@ -27,7 +27,7 @@
                 this.salario = salario;
             }
             mostrarDados() {
-                return '<br/><strong>Dados do funcionário </strong></br><br><strong>Nome: </strong>' + this.nome + '<br/><strong>Número CTPS: </strong>' + this.numCTPS + '</br><strong>Salário: </strong>' + this.salario +'<br>';
+                return '<br/><strong>Dados do funcionário </strong></br><br><strong>Nome: </strong>' + this.nome + '<br/><strong>Número CTPS: </strong>' + this.numCTPS + '</br><strong>Salário: </strong>' + this.salario + '<br>';
             }
         }
 
@@ -42,7 +42,7 @@
                 return this.mostrarDados() + '<strong>Venda: </strong>' + this.venda + '</br><strong>Comissao: </strong>' + this.comissao;
             }
         }
-        funcionario = new Funcionario ("Antonio Gomes", "45654-1", "R$ 5.100,00");
+        funcionario = new Funcionario("Antonio Gomes", "45654-1", "R$ 5.100,00");
         document.write(funcionario.mostrarDados());
 
         funcionarioComissionado = new FuncionarioComissionado("Andre Farias", "12545-0", "R$ 5.610,00", "10", "1%");
