@@ -10,6 +10,7 @@
 
 <body>
     <Div>
+
         Crie uma classe chamada <strong>"Quadrado"</strong> com ES6, que herdará os métodos da classe
         <strong>"Poligono"</strong>. A classe <strong>"Poligono"</strong> deve ter os seguintes métodos: <strong>
             constructor(altura, largura)</strong> e <strong>mostrarNome( )</strong> para retornar a seguinte mensagem:
@@ -20,9 +21,11 @@
         <br /><i>Olá, eu sou um Polígono.</i>.
         <br /><i>Olá, eu sou um Quadrado.</i>.
         <br /><i>A área do quadrado é: (mostrar o respectivo valor).</i>
+        
     </Div>
 
     <script>
+
         class Poligono {
             constructor(altura, largura) {
                 this.altura = altura;
@@ -53,10 +56,9 @@
 
         poligono = new Poligono(10, 2);
         document.write(poligono.mostrarNome());
-        quadrado = new Quadrado(0, 0, 0);
+        quadrado = new Quadrado(2, 2, 2);
         document.write(quadrado.mostrar());
         document.write(quadrado.area);
-
 
     </script>
 
