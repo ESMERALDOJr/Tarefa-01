@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+
+<body>
+    <Div>
+        Crie uma classe chamada <strong>"Quadrado"</strong> com ES6, que herdará os métodos da classe
+        <strong>"Poligono"</strong>. A classe <strong>"Poligono"</strong> deve ter os seguintes métodos: <strong>
+            constructor(altura, largura)</strong> e <strong>mostrarNome( )</strong> para retornar a seguinte mensagem:
+        <i>
+            Olá, eu sou um Polígono</i>. A classe <strong>"Quadrado"</strong> deve ter os seguintes métodos:
+        <strong>constructor(comprimento)</strong> e <strong>get area( )</strong>. Em seguida, crie um objeto
+        de cada uma das classes e, no final, mostre as seguintes mensagens no browser:
+        <br /><i>Olá, eu sou um Polígono.</i>.
+        <br /><i>Olá, eu sou um Quadrado.</i>.
+        <br /><i>A área do quadrado é: (mostrar o respectivo valor).</i>
+    </Div>
+
+    <script>
+        class Poligono {
+            constructor(altura, largura) {
+                this.altura = altura;
+                this.largura = largura;
+            }
+
+            mostrarNome() {
+                return "<br/>Olá, eu sou um Polígono."
+            }
+        }
+
+        class Quadrado extends Poligono {
+            constructor(altura, largura, comprimento) {
+                super(altura, largura);
+                this.comprimento = comprimento;
+            }
+
+            mostrar() {
+                return "<br/>Olá, eu sou um Quadrado ";
+            }
+
+            get area() {
+                return "<br/>A área do quadrado é: " + parseFloat(this.altura) * parseFloat(this.largura)
+            }
+
+
+        }
+
+        poligono = new Poligono(10, 2);
+        document.write(poligono.mostrarNome());
+        quadrado = new Quadrado(0, 0, 0);
+        document.write(quadrado.mostrar());
+        document.write(quadrado.area);
+
+
+    </script>
+
+</body>
+
+</html>

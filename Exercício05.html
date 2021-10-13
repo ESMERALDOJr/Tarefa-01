@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Faça uma função anônima com ES6, armazenada na variável <strong>mostrarFrase</strong>, que receba os parâmetros 
+        <strong>"nome"</strong> e <strong>"sobrenome"</strong> e imprima a seguinte mensagem no browser: <i>Olá 
+        (mostrarnome e sobrenome)</i>. Exemplo: <i>Eu sou Fulano de Tal</i>.
+    </div>
+
+    <script>
+        mostraFrase = function(nome, sobrenome) {
+            return '<br/>Olá, Eu sou ' + nome + ' ' + sobrenome + '.';
+        }
+
+        document.write(mostraFrase("Esmeraldo", "Junior"));
+    </script>
+</body>
+</html>

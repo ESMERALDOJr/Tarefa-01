@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <div>
+        01 - Escreva código com ES6 deretamente em uma página HTML para criar uma classe chamada "Carro",
+        que deve ter o seguinte método construtor: <strong>constructor(nome, ano)</strong>. Em seguida,
+        crie um objeto dessa classe e mostre a seguinte mensagem no browser: <i>Mostrar a marca e o ano
+            do carro. <strong>Por exemplo: Ford 2014.</strong></i>
+    </div>
+
+    <script>
+        class Carro {
+            constructor(nome, ano) {
+                this.nome = nome;
+                this.ano = ano;
+            }
+        }
+
+        esteCarro = new Carro("Ford", "2014");
+        document.write("</br>" + esteCarro.nome + " " + esteCarro.ano);
+    </script>
+
+</body>
+
+</html>
